@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginLeft="20dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer These Questions From Kotlin Fundamentals"
+        android:textSize="30sp"
+        android:textStyle="bold"
+    />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <TextView
+        android:id="@+id/quiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the extension of the file runs by the Dalvik Virtual Machine?"
+        android:textSize="20sp"
+    />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".class"
+            android:layout_margin="16dp"
+        />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".dex"
+            android:layout_margin="16dp"
+        />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".dvx"
+            android:layout_margin="16dp"
+        />
+    </RadioGroup>
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <TextView
+        android:id="@+id/quiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Kotlin, what is the default visibility modifier?"
+        android:textSize="20sp"
+     />
+
+    <CheckBox
+        android:id="@+id/priv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="private">
+
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/prot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="protected">
+
+    </CheckBox>
+
+
+    <CheckBox
+        android:id="@+id/pub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="public">
+
+    </CheckBox>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginRight="150dp"
+            android:onClick="submit">
+
+        </Button>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:onClick="reset">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>
